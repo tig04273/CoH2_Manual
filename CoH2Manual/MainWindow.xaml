@@ -1,0 +1,117 @@
+﻿<Window x:Class="CoH2Manual.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoH2Manual"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="870" Width="1260" Background="#FF4C5D13">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Border Grid.Row="1" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="10*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="10*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="10*" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Sov_Button" Grid.Row="0" Grid.Column="0" Style="{StaticResource CustomButtonStyleRED}" Click="Sov_Button_Click">
+                    <Button.OpacityMask>
+                        <ImageBrush ImageSource="/resource/soviet2.png"/>
+                    </Button.OpacityMask>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/resource/soviet.png" TileMode="None"/>
+                    </Button.Background>
+                </Button>
+                <TextBlock Grid.Row="1" Grid.Column="0" FontSize="30" FontFamily="Arial Black" ClipToBounds="True" TextAlignment="Center" Background="#FFD61414" Foreground="#FFFFF500">
+                    Soviet
+                </TextBlock>
+                <Button x:Name="USA_Button" Grid.Row="0" Grid.Column="2" Style="{StaticResource CustomButtonStyleYellow}" Click="USA_Button_Click">
+                    <Button.OpacityMask>
+                        <ImageBrush ImageSource="/resource/americans2.png"/>
+                    </Button.OpacityMask>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/resource/americans.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBlock Grid.Row="1" Grid.Column="2" FontSize="30" FontFamily="Arial Black" ClipToBounds="True" TextAlignment="Center" Background="#FF0C0880" Foreground="#FFFDFDDE">
+                    Americans
+                </TextBlock>
+                <Button x:Name="ENG_Button" Grid.Row="0" Grid.Column="4" Style="{StaticResource CustomButtonStyleYellow}" FontSize="30" Click="ENG_Button_Click">
+                    <Button.OpacityMask>
+                        <ImageBrush ImageSource="/resource/british2.png"/>
+                    </Button.OpacityMask>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/resource/british.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBlock Grid.Row="1" Grid.Column="5" FontSize="30" FontFamily="Arial Black" ClipToBounds="True" TextAlignment="Center" Background="#FF012066" Foreground="#FFFF2121">
+                    British
+                </TextBlock>
+                <Button x:Name="GER_Button" Grid.Row="2" Grid.Column="0" Style="{StaticResource CustomButtonStyleRED}" Click="GER_Button_Click">
+                    <Button.OpacityMask>
+                        <ImageBrush ImageSource="/resource/wermacht2.png"/>
+                    </Button.OpacityMask>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/resource/wermacht.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBlock Grid.Row="3" Grid.Column="0" FontSize="30" FontFamily="Arial Black" ClipToBounds="True" TextAlignment="Center" Background="#FF560202" Foreground="#FF00FFED">
+                    Wermacht
+                </TextBlock>
+                <Button x:Name="OKW_Button" Grid.Row="2" Grid.Column="2" Style="{StaticResource CustomButtonStyleBLUE}" Click="OKW_Button_Click">
+                    <Button.OpacityMask>
+                        <ImageBrush ImageSource="/resource/OKW2.png"/>
+                    </Button.OpacityMask>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/resource/OKW.png"/>
+                    </Button.Background>
+                </Button>
+                <TextBlock Grid.Row="3" Grid.Column="2" FontSize="30" FontFamily="Arial Black" ClipToBounds="True" TextAlignment="Center" Background="Black" Foreground="#FFB7B7B7">
+                    OKW
+                </TextBlock>
+                <Grid Grid.Row="2" Grid.Column="4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="5*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="5*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Translate_Button" Grid.Row="1" Grid.Column="1" Style="{StaticResource CustomButtonStyleGREEN}" FontSize="40" FontWeight="Bold" Click="Translate_Button_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/resource/translate.png"/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+                <TextBlock Grid.Row="3" Grid.Column="5" FontSize="30" FontFamily="Arial Black" ClipToBounds="True" TextAlignment="Center" Background="#FF009C5F" Foreground="White">
+                    Translate
+                </TextBlock>
+
+            </Grid>
+        </Border>
+        <Frame Name="Frame_CoH2Manual" NavigationUIVisibility="Hidden" Grid.Row="1" Grid.Column="1" />
+    </Grid>
+
+</Window>

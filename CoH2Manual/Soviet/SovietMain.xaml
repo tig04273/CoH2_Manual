@@ -1,0 +1,25 @@
+﻿<Page x:Class="CoH2Manual.Soviet.SovietMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CoH2Manual.Soviet"
+      mc:Ignorable="d" 
+      d:DesignHeight="725" d:DesignWidth="1050" Background="Gray"
+      Title="SovietMain">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="10" />
+        </Grid.ColumnDefinitions>
+        <Label Content="Soviet1.xaml desu" Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</Page>
